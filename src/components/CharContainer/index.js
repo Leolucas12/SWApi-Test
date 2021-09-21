@@ -1,23 +1,30 @@
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
 import { useState } from "react/cjs/react.development";
 import api from "../../services/api";
 import { Character } from "../Character";
 import { Container } from "./styles";
 
-export function CharContainer({ links }) {
+export function CharContainer() {
+    const activeMovie = useSelector((state) => state.movie.activeMovie)
     const [characters, setCharacters] = useState([]);
 
-    useEffect(async () => {
+    const fetchCharacters = async () => {
         const chars = [];
-        for (let i = 0; i < links.length; i++) {
-            await api.get(links[i].split('/api')[1])
+        for (let i = 0; i < activeMovie.characters.length; i++) {
+            await api.get(activeMovie.characters[i].split('/api')[1])
                 .then(({ data }) => {
                     chars.push(data);
                 })
         }
 
         setCharacters([...characters, ...chars])
-    }, []);
+    };
+
+    useEffect(() => {
+        console.log(activeMovie)
+        if (activeMovie !== undefined) fetchCharacters();
+    }, [activeMovie]);
 
     return (
         <Container>
