@@ -8,11 +8,17 @@ export default createGlobalStyle`
   }
   
   body {
-    background: #f8f8f8;
-    color: #29292e;
+    background: #2b2d42;
+    color: #edf2f4;
   }
   
   body, input, button, textarea {
     font: 400 16px 'Roboto', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: #edf2f4;
+    font: 800 16px 'Roboto', sans-serif;
   }
 `;
