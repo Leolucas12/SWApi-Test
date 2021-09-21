@@ -7,3 +7,7 @@ export const Container = styled.div`
     grid-gap: 5px;
     width: 100%;
 `;
+
+export const Loading = styled.div`
+
+`;

@@ -7,6 +7,10 @@ export const Container = styled.div`
     justify-content: space-around;
     padding: 12px;
     background-color: #2a6f97;
+
+    a {
+        width: 80%;
+    }
 `;
 
 export const Title = styled.div`
@@ -15,9 +19,6 @@ export const Title = styled.div`
 `;
 
 export const Links = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
     width: 20%;
 `;
 

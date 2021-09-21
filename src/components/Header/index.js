@@ -5,9 +5,8 @@ import { Redirect, Title, Container } from "./styles";
 export function Header() {
     return (
         <Container>
-            <Title>SWAPI Test</Title>
+            <Link to="/"><Title>SWAPI Test</Title></Link>
             <Links>
-                <Link to="/movies"><Redirect>MOVIES</Redirect></Link>
                 <Link to="/characters"><Redirect>CHARACTERS</Redirect></Link>
             </Links>
         </Container>
