@@ -22,7 +22,6 @@ export function MainMovie() {
 
     useEffect(() => {
         fetchMovies();
-        console.log(movies)
     }, []);
 
     const toggleNextMovie = useCallback(() => {
