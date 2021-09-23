@@ -6,10 +6,14 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   body {
-    background: #2b2d42;
-    color: #edf2f4;
+    background: #202020;
+    color: #d6d6d6;
   }
   
   body, input, button, textarea {
@@ -18,7 +22,7 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: #edf2f4;
+    color: #ffee32;
     font: 800 16px 'Roboto', sans-serif;
   }
 `;

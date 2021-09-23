@@ -5,7 +5,7 @@ import api from "../../services/api";
 import { Character } from "../Character";
 import { Container, Loading } from "./styles";
 
-export function CharContainer() {
+export function MovieCharactersContainer() {
     const activeMovie = useSelector((state) => state.movie.activeMovie)
     const [characters, setCharacters] = useState([]);
     const [loading, setLoading] = useState(true);

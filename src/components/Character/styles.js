@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     padding: 10px;
-    background-color: #3d5a80;
+    background-color: #333533;
     border-radius: 6px;
+    text-align: left;
 `;
 
 export const Name = styled.h2`

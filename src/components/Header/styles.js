@@ -6,29 +6,34 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-around;
     padding: 12px;
-    background-color: #2a6f97;
+    background-color: #333533;
 
     a {
-        width: 80%;
+        width: 100%;
     }
 `;
 
 export const Title = styled.div`
     font-size: 24px;
-    width: 80%;
+    width: 70%;
+    font-family: 'Secular One', sans-serif;
 `;
 
 export const Links = styled.div`
-    width: 20%;
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
 `;
 
-export const Redirect = styled.div`
+export const GoTo = styled.a`
     padding: 12px;
-    background-color: #8d99ae;
+    background-color: #333533;
     border-radius: 6px;
     text-align: center;
+    font-family: 'Secular One', sans-serif;
 
     &:hover {
-        background: ${shade(0.2, "#8d99ae")};
+        background: ${shade(0.2, "#333533")};
     }
 `;
